@@ -6,7 +6,7 @@ import AwesomCustomRadio from './AwesomeCustomRadio';
 class App extends React.Component {
 
 	state = {
-		value: undefined,
+		value: 2,
 	};
 
 	onChangeValue = (value) => {
@@ -20,6 +20,7 @@ class App extends React.Component {
 				className={'radio-group'}
 				selectedValue={this.state.value}
 				onChange={this.onChangeValue}
+				name={'radio-group-1'}
 			>
 				<label className={'radio-option'}><Radio value={1} className={'radio-checkmark'}/>One</label>
 				<label className={'radio-option'}><Radio value={2} className={'radio-checkmark'}/>Two</label>
@@ -32,6 +33,7 @@ class App extends React.Component {
 				className={'radio-group'}
 				selectedValue={this.state.value}
 				onChange={this.onChangeValue}
+				name={'radio-group-2'}
 			>
 				<Radio value={1} className={'radio-checkmark'}><AwesomCustomRadio>One</AwesomCustomRadio></Radio>
 				<Radio value={2} className={'radio-checkmark'}><AwesomCustomRadio>Two</AwesomCustomRadio></Radio>
@@ -44,6 +46,7 @@ class App extends React.Component {
 				className={'radio-group'}
 				selectedValue={this.state.value}
 				onChange={this.onChangeValue}
+				name={'radio-group-3'}
 			>
 				<Radio value={1}>{({ checked, onChange, name }) => {
 					return <button onClick={onChange}>One {checked && 'checked!'}</button>;

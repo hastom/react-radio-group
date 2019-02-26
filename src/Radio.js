@@ -24,10 +24,10 @@ class Radio extends React.Component {
 					const checked = selectedValue === value;
 					const boundOnChange = onChange.bind(null, value);
 					if (typeof children === 'function') {
-						return children({ name, checked, onChange: boundOnChange });
+						return children({ name, checked, onChange: boundOnChange, value });
 					} else if (typeof children === 'object') {
 						const child = React.Children.only(children);
-						return React.cloneElement(child, { name, checked, onChange: boundOnChange });
+						return React.cloneElement(child, { name, checked, onChange: boundOnChange, value });
 					} else {
 						return <input
 							role={'radio'}

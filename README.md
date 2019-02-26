@@ -29,8 +29,8 @@ Any prop not listed above will be passed to component container
 Props:
 - `value: String | Number`: input value
 - `children: Node | Function`: If no children specified `<Radio/>` will render default `<input/>`.
-If child is React component, it will be cloned and populated with `checked`, `name` and `onChange` props.
-If child if function, it will be called with `{checked, name, onChange}` as an argument.
+If child is React component, it will be cloned and populated with `checked`, `name`, `value` and `onChange` props.
+If child if function, it will be called with `{checked, name, onChange, value}` as an argument.
 
 ## Examples
 
