@@ -1,0 +1,55 @@
+{
+	"name": "@hastom/react-radio-group",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./dist/index.js",
+	"scripts": {
+		"dev": "webpack-dev-server --config=build/webpack.config.dev.js",
+		"build": "webpack --config=build/webpack.config.prod.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hastom/react-radio-group.git"
+	},
+	"keywords": [
+		"react",
+		"radio",
+		"radio-group",
+		"radio-buttons",
+		"radio-input",
+		"component",
+		"react-component"
+	],
+	"author": "hastom <hastomit@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/hastom/react-radio-group/issues"
+	},
+	"homepage": "https://github.com/hastom/react-radio-group#readme",
+	"devDependencies": {
+		"@babel/core": "^7.3.4",
+		"@babel/plugin-proposal-class-properties": "^7.3.4",
+		"@babel/preset-env": "^7.3.4",
+		"@babel/preset-react": "^7.0.0",
+		"babel-eslint": "^10.0.1",
+		"babel-loader": "^8.0.5",
+		"babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+		"clean-webpack-plugin": "^1.0.1",
+		"css-loader": "^2.1.0",
+		"eslint": "^5.14.1",
+		"eslint-loader": "^2.1.2",
+		"eslint-plugin-react": "^7.12.4",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^3.2.0",
+		"style-loader": "^0.23.1",
+		"webpack": "^4.29.5",
+		"webpack-cli": "^3.2.3",
+		"webpack-dev-server": "^3.2.1",
+		"webpack-merge": "^4.2.1"
+	},
+	"dependencies": {
+		"prop-types": "^15.7.2",
+		"react": "^16.8.3",
+		"react-dom": "^16.8.3"
+	}
+}

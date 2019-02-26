@@ -1,0 +1,81 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"parser": "babel-eslint",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 8,
+		"ecmaFeatures": {
+			"jsx": true,
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"rules": {
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		],
+		"semi": "error",
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 2,
+				"maxEOF": 1
+			}
+		],
+		"array-bracket-spacing": [
+			"error",
+			"never"
+		],
+		"no-param-reassign": "error",
+		"yoda": "error",
+		"no-var": "error",
+		"prefer-const": "error",
+		"arrow-parens": [
+			"error",
+			"as-needed",
+			{
+				"requireForBlockBody": true
+			}
+		],
+		"no-console": "warn",
+		"no-unreachable": "warn",
+		"no-unused-vars": "warn",
+		"no-useless-escape": "warn",
+		"react/display-name": "off"
+	},
+	"plugins": [
+		"react"
+	],
+	"settings": {
+		"react": {
+			"version": "16.4"
+		}
+	}
+}
