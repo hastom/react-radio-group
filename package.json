@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "webpack-dev-server --config=build/webpack.config.dev.js",
 		"build": "webpack --config=build/webpack.config.prod.js",
-		"prepublish": "npm run build"
+		"prepare": "npm run build"
 	},
 	"repository": {
 		"type": "git",
