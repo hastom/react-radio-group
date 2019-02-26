@@ -7,8 +7,8 @@ Tiny component to manage radio-inputs groups, built with new React.Context API
 To install, you can use [npm](https://npmjs.org/) or [yarn](https://yarnpkg.com):
 
 ```
-$ npm install react-modal
-$ yarn add react-modal
+$ npm i @hastom/react-radio-group
+$ yarn add @hastom/react-radio-group
 ```
 
 ## API

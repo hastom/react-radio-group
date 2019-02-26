@@ -1,3 +1,4 @@
-/src
-/demo
-/build
+src/
+demo/
+build/
+.idea/
