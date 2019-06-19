@@ -3,6 +3,8 @@ const merge = require('webpack-merge');
 const commonConfig = require('./webpack.config');
 const { resolve } = require('path');
 
+process.env.NODE_ENV = 'production';
+
 module.exports = merge(commonConfig, {
 	mode: 'production',
 	entry: resolve('./src/index.js'),
