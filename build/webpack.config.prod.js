@@ -9,6 +9,7 @@ module.exports = merge(commonConfig, {
 	output: {
 		filename: 'index.js',
 		library: 'RadioGroup',
+		libraryTarget: 'commonjs2',
 	},
 	externals: [
 		{
